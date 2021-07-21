@@ -1,0 +1,89 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+added file Table_01.jpeg to results dic
+added file Dog_02.jpeg to results dic
+added file Brown_Bear_01.jpeg to results dic
+added file Dog_01.jpeg to results dic
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                  Table_01.jpeg  label:                      table
+ 2 key:                    Dog_02.jpeg  label:                        dog
+ 3 key:             Brown_Bear_01.jpeg  label:                 brown bear
+ 4 key:                    Dog_01.jpeg  label:                        dog
+-
+--
+---
+----
+
+     MATCH:
+
+            Brown_Bear_01.jpeg: 
+Real:                 brown bear   Classifier: brown bear, bruin, ursus arctos
+
+ NOT A MATCH:
+
+                 Table_01.jpeg: 
+Real:                      table   Classifier:    pedestal, plinth, footstall
+
+                   Dog_02.jpeg: 
+Real:                        dog   Classifier:               golden retriever
+
+                   Dog_01.jpeg: 
+Real:                        dog   Classifier:               golden retriever
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+     MATCH:
+
+            Brown_Bear_01.jpeg: 
+Real:                 brown bear   Classifier: brown bear, bruin, ursus arctos  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+                 Table_01.jpeg: 
+Real:                      table   Classifier:    pedestal, plinth, footstall  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                   Dog_02.jpeg: 
+Real:                        dog   Classifier:               golden retriever  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                   Dog_01.jpeg: 
+Real:                        dog   Classifier:               golden retriever  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+
+*** Results Summary for CNN Model Architecture VGG ***
+N Images            :   4
+N Dog Images        :   2
+N Not-Dog Images    :   2
+ 
+-------------------------------------
+      Statistics in Percentages
+-------------------------------------
+pct_match                : 25.0
+pct_correct_dogs         : 100.0
+pct_correct_breed        : 0.0
+pct_correct_notdogs      : 100.0
+
+-------------------------------------
+   INCORRECT Dog Breed Assignment:
+-------------------------------------
+Real:                        dog   Classifier:               golden retriever
+Real:                        dog   Classifier:               golden retriever
+
+** Total Elapsed Runtime: 0:0:3
